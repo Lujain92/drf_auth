@@ -3,7 +3,7 @@ version: "3.9"
 services:
   web:
     build: .
-    command: gunicorn auth_things_api.wsgi:application --bind 0.0.0.0:8000 --workers 4
+    command: gunicorn car_project.wsgi:application --bind 0.0.0.0:8000 --workers 4
     volumes:
       - .:/code
     ports:
